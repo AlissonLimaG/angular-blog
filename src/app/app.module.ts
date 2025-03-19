@@ -11,6 +11,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContentComponent } from './pages/content/content.component';
 import { ThemeButtonComponent } from './components/theme-button/theme-button.component';
 import { ThemeService } from './service/theme.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,11 +23,13 @@ import { ThemeService } from './service/theme.service';
     SmallCardComponent,
     HomeComponent,
     ContentComponent,
-    ThemeButtonComponent
+    ThemeButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [ThemeService],
   bootstrap: [AppComponent]

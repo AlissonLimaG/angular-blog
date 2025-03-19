@@ -14,8 +14,8 @@ export class ThemeButtonComponent implements OnInit {
 
   switchTheme(){
     this.themeService.switchTheme();
-    if(this.modo === 'Escuro') this.modo = 'Claro';
-    else this.modo = 'Escuro';
+    if(this.modo === 'Claro') this.modo = 'Escuro';
+    else this.modo = 'Claro';
   }
 
   ngOnInit(): void {

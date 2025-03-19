@@ -1,10 +1,29 @@
+.articles__main > h1{
+  margin-bottom: 1rem;
+
+}
+
+.articles__others{
+  display: flex;
+  flex-direction: column;
+  padding: 0 10px;
+}
+
+.articles__others > h1{
+  margin-bottom: 1rem;
+  @media(max-width:900px){
+    margin-top: 3rem;
+  }
+}
+
 .container__articles{
   margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 
-  @media(min-width: 700px) {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  @media(max-width: 900px) {
+    flex-direction: column;
+
   }
 }
 
